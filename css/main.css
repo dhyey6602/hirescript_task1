@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500&display=swap');
+:root {
+    --main-dark : #043353 ;
+    --secondary-dark : #18A4E0 ;
+    --light : #FAF8F0 ;
+    --secondary-light : #D3DDE6 ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    font-family: 'Fira Sans', sans-serif;
+}
+.navbar{
+    background-color: var(--main-dark);
+    color: var(--light);
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem;
+}
+.navbar-title{
+    font-size: 2rem;
+}
+.navbar-item{
+    float: right;
+    font-size: 1rem;
+    margin-right: 2rem;
+    background-color: var(--secondary-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+}
+.utility-buttons{
+    text-align: center;
+}
+.button{
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem 1rem;
+    color: var(--light);
+    border-radius: 5%;
+    width: 8rem;
+}
+.button-reset{
+    background-color: #eb3b5a;
+}
+.button-mem{
+    background-color:#20bf6b;
+}
+.button-attempts{
+    background-color:#2d98da;
+}
+.button:hover{
+    cursor: pointer;
+}
+.box-question{
+    height: 2rem;
+    width: 4rem;
+    background: var(--secondary-light);
+}
