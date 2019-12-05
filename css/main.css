@@ -32,6 +32,7 @@ body{
 }
 .utility-buttons{
     text-align: center;
+    margin-top: 2rem;
 }
 .button{
     display: inline-block;
@@ -53,8 +54,28 @@ body{
 .button:hover{
     cursor: pointer;
 }
+.boxes{
+    width: 60%;
+    text-align: center;
+    margin-top: 2rem;
+    border-right: 2px solid var(--main-dark);
+    float: left;
+}
 .box-question{
-    height: 2rem;
-    width: 4rem;
+    display: inline-block;
+    height: 8rem;
+    width: 8rem;
+    margin: 0.5rem;
+    background: var(--secondary-light);
+}
+.choices-box{
+    padding: 2rem 0;
+    text-align: center;
+}
+.box-choice{
+    display: inline-block;
+    height: 8rem;
+    width: 8rem;
+    margin: 0.5rem;
     background: var(--secondary-light);
 }
