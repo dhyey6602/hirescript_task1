@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:500&display=swap');
+
 :root {
-    --main-dark : #043353 ;
-    --secondary-dark : #18A4E0 ;
-    --light : #FAF8F0 ;
-    --secondary-light : #D3DDE6 ;
+    --main-dark: #043353;
+    --secondary-dark: #18A4E0;
+    --light: #FAF8F0;
+    --secondary-light: #D3DDE6;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     background-color: var(--light);
     font-family: 'Fira Sans', sans-serif;
 }
-.navbar{
+
+/* navigation bar  */
+
+.navbar {
     background-color: var(--main-dark);
     color: var(--light);
     width: 100%;
@@ -19,10 +24,12 @@ body{
     text-align: center;
     padding: 1rem;
 }
-.navbar-title{
+
+.navbar-title {
     font-size: 2rem;
 }
-.navbar-item{
+
+.navbar-item {
     float: right;
     font-size: 1rem;
     margin-right: 2rem;
@@ -30,11 +37,15 @@ body{
     padding: 0.5rem 1rem;
     border-radius: 10%;
 }
-.utility-buttons{
+
+/* utility-buttons */
+
+.utility-buttons {
     text-align: center;
     margin-top: 2rem;
 }
-.button{
+
+.button {
     display: inline-block;
     margin: 0.5rem;
     padding: 1rem 1rem;
@@ -42,40 +53,79 @@ body{
     border-radius: 5%;
     width: 8rem;
 }
-.button-reset{
+
+.button-reset {
     background-color: #eb3b5a;
 }
-.button-mem{
-    background-color:#20bf6b;
+
+.button-mem {
+    background-color: #20bf6b;
 }
-.button-attempts{
-    background-color:#2d98da;
+
+.button-attempts {
+    background-color: #2d98da;
 }
-.button:hover{
+
+.button:hover {
     cursor: pointer;
 }
-.boxes{
+
+/* main content */
+
+.boxes {
     width: 60%;
     text-align: center;
     margin-top: 2rem;
     border-right: 2px solid var(--main-dark);
     float: left;
 }
-.box-question{
+
+.box-question {
     display: inline-block;
     height: 8rem;
     width: 8rem;
     margin: 0.5rem;
     background: var(--secondary-light);
 }
-.choices-box{
+
+.choices-box {
     padding: 2rem 0;
     text-align: center;
 }
-.box-choice{
+
+.box-choice {
     display: inline-block;
     height: 8rem;
     width: 8rem;
     margin: 0.5rem;
     background: var(--secondary-light);
 }
+@media (max-width: 400px){
+    body{
+        font-size: small;
+    }
+    .box-question{
+        height: 4rem;
+        width: 4rem;
+        margin: 0.2rem;
+    }
+    .box-choice{
+        height: 4rem;
+        width: 4rem;
+        margin: 0.2rem;
+    }
+    .boxes{
+        width: 100%;
+        border: none;
+        margin-bottom: 2rem;
+    }
+    .button{
+        width: 2rem;
+        padding: 0.2rem;
+        font-size: 0.5rem;
+    }
+    .utility-buttons{
+        margin-top: 0.5rem;
+    }
+}
+
