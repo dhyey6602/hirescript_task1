@@ -35,7 +35,7 @@ body {
     margin-right: 10%;
     background-color: var(--secondary-dark);
     padding: 0.5rem 1rem;
-    border-radius: 10%;
+    border-radius: 10%; // specifying border radius
 }
 
 /* utility-buttons */
@@ -128,4 +128,3 @@ body {
         margin-top: 0.5rem;
     }
 }
-
